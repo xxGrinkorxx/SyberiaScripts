@@ -107,7 +107,7 @@ class DeadChicken_ColorBase: Edible_Base
         class ObtainedFeathers
         {
             item="ChickenFeather";
-            count=0;
+            count=10;
             quantityMinMaxCoef[]={0.5,1};
             transferToolDamageCoef=1;
         };
