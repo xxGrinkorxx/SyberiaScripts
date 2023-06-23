@@ -45,7 +45,7 @@ class TetracyclineAntibiotics: Edible_Base
 
 class AntiChemInjector: Inventory_Base
 {
-    scope=0;
+    medicalItem=1;
 };
 
 class BandageDressing: Inventory_Base
