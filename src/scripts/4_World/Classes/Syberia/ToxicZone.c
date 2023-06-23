@@ -21,7 +21,7 @@ class ToxicZoneView
 		m_particles = new array<Particle>;
 		m_position = pos;
 		m_radius = radius;		
-		m_particleId = ParticleList.CONTAMINATED_AREA_GAS_BIGASS;
+		m_particleId = ParticleList.CONTAMINATED_AREA_GAS_BIGASS_ORNG;
 	}
 	
 	void Update(PlayerBase player)
