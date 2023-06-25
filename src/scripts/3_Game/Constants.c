@@ -383,7 +383,7 @@ modded class GameConstants
 	const float TEMPERATURE_RATE_COOLING_GROUND = -0.20;
 	const float TEMPERATURE_RATE_COOLING_PLAYER = 0; // disabled for correct calculation
 	const float ENVIRO_ITEM_HEAT_TRANSFER_COEF = 0.025;
-	const float TEMPERATURE_ITEM_HEAT_TRANSFER_COEF = 0.05;
+	const float TEMPERATURE_ITEM_HEAT_TRANSFER_COEF = 0.18;
 	const float TEMPERATURE_ITEMS_HEAT_IN_INVENTORY_FROM_BODY = 26;
 	const float ENVIRO_FIRE_INCREMENT = 0.001;	
 	const float ENVIRO_DRY_INCREMENT = 0.000005;
