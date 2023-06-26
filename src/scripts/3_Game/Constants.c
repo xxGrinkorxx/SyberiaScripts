@@ -379,8 +379,8 @@ modded class GameConstants
 	const float STAMINA_SYNC_RATE = 1; //in secs
 	const float STAMINA_MAX = 100;
 	
-	const float TEMPERATURE_RATE_COOLING_INSIDE = -0.18;
-	const float TEMPERATURE_RATE_COOLING_GROUND = -0.20;
+	const float TEMPERATURE_RATE_COOLING_INSIDE = -0.15;
+	const float TEMPERATURE_RATE_COOLING_GROUND = -0.25;
 	const float TEMPERATURE_RATE_COOLING_PLAYER = 0; // disabled for correct calculation
 	const float ENVIRO_ITEM_HEAT_TRANSFER_COEF = 0.025;
 	const float TEMPERATURE_ITEM_HEAT_TRANSFER_COEF = 0.18;

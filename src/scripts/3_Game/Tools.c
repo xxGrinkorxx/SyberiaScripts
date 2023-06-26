@@ -1,16 +1,16 @@
 int GetSyberiaTemperatureColor( int temperature, int alpha )
 {
     float mod;
-    if ( temperature < -10 )
+    if ( temperature < 0 )
 	{
-        return ARGB( alpha, 180, 180, 180 );
+        return ARGB( alpha, 0, 204, 255 );
     }
 	
     if ( temperature < 10 )
 	{
         mod = temperature + 10;
         mod = (100 / 20) * mod;
-		return ARGB( alpha, 180 - (int)mod, 180, 180 );
+		return ARGB( alpha, 0, 127, 255 );
 	}
     
     if ( temperature < 30 )

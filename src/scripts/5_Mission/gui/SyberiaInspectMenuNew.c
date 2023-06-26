@@ -10,17 +10,23 @@ modded class InspectMenuNew
             if ( temperature > 100 )
             {
                 temperature = 100 * Math.Floor( temperature / 100.0 );
+				WidgetTrySetText(root_widget, "ItemTemperatureWidget",  "#inv_inspect_about " + temperature.ToString() +  " " + "#inv_inspect_celsius", GetSyberiaTemperatureColor( temperature, 255 ) );
             }
 			else if ( temperature > 10 )
 			{
 				temperature = 10 * Math.Floor( temperature / 10.0 );
+				WidgetTrySetText(root_widget, "ItemTemperatureWidget",  "#inv_inspect_about " + temperature.ToString() +  " " + "#inv_inspect_celsius", GetSyberiaTemperatureColor( temperature, 255 ) );
 			}
-            else
+            else if ( temperature >0 )
 			{
 				temperature = 5 * Math.Floor( temperature / 5.0 );
+				WidgetTrySetText(root_widget, "ItemTemperatureWidget",  "#str_syb_freezing" , GetSyberiaTemperatureColor( temperature, 255 ) );
+			}else
+			{
+				WidgetTrySetText(root_widget, "ItemTemperatureWidget",  "#str_syb_frozen" , GetSyberiaTemperatureColor( temperature, 255 ) );
 			}
             
-            WidgetTrySetText(root_widget, "ItemTemperatureWidget",  "#inv_inspect_about " + temperature.ToString() +  " " + "#inv_inspect_celsius", GetSyberiaTemperatureColor( temperature, 255 ) );
+            
 		}
         else
         {
