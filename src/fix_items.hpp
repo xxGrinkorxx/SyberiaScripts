@@ -36,5 +36,6 @@ class FryingPan: Inventory_Base
 
 class Heatpack: Inventory_Base
 {
-    varTemperatureMin=-100;
+    varTemperatureMin= 26;
+    varTemperatureMax= 90;
 };
