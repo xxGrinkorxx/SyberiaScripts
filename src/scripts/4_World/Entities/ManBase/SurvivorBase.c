@@ -1,10 +1,10 @@
-modded class AnimalBase
+modded class SurvivorBase
 {
 	protected bool m_alreadySkinned = false;
 	
-	override void EEInit()
+	override void Init()
 	{
-		super.EEInit();
+		super.Init();
 		RegisterNetSyncVariableBool("m_alreadySkinned");
 	}
 	

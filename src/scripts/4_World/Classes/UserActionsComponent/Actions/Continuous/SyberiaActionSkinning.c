@@ -32,6 +32,12 @@ modded class ActionSkinning
 					return true;
 				}
 				
+				SurvivorBase survivor = SurvivorBase.Cast(targetObject);
+				if (survivor && !survivor.IsSkinned() && !survivor.IsAlive())
+				{
+					return true;
+				}
+				
 				Edible_Base edibleBase = Edible_Base.Cast(targetObject);
 				if (edibleBase && !edibleBase.IsSkinned())
 				{

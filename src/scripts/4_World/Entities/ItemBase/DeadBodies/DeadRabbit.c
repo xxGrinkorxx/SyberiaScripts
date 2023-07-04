@@ -5,11 +5,6 @@ modded class DeadRabbit
 		return true;
 	}
 	
-	override bool IsInventoryVisible()
-	{
-		return IsSkinned();
-	}
-	
 	override bool IsSkinned()
 	{
 		return CanBeSkinned() && m_alreadySkinned;

@@ -5,11 +5,6 @@ modded class DeadChicken_ColorBase
 		return true;
 	}
 	
-	override bool IsInventoryVisible()
-	{
-		return IsSkinned();
-	}
-	
 	override bool IsSkinned()
 	{
 		return CanBeSkinned() && m_alreadySkinned;
