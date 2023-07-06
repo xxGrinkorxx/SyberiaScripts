@@ -45,7 +45,10 @@ class TetracyclineAntibiotics: Edible_Base
 
 class AntiChemInjector: Inventory_Base
 {
-    medicalItem=1;
+    medicalItem=1; 
+    medStomatchhealLevel=2;
+    medStomatchhealTimeSec=300;
+    overdosedIncrement=0.8;
 };
 
 class BandageDressing: Inventory_Base
