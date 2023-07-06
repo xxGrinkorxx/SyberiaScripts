@@ -75,9 +75,20 @@ modded class IngameHud
 		{
 			badgetColor = yellowColor;
 		}
-		else if (key == NTFKEY_BLEEDISH || key == NTFKEY_BULLETHIT || key == NTFKEY_KNIFEHIT || key == NTFKEY_VISCERADMG || key == NTFKEY_SEPSIS || key == NTFKEY_ZVIRUS)
+		else if (key == NTFKEY_BLEEDISH || key == NTFKEY_BULLETHIT || key == NTFKEY_KNIFEHIT || key == NTFKEY_VISCERADMG)
 		{
 			badgetColor = redColor;
+		}
+		else if (key == NTFKEY_SEPSIS || key == NTFKEY_ZVIRUS || key == NTFKEY_POISONED)
+		{
+			if (value > 1)
+			{
+				badgetColor = redColor;
+			}
+			else
+			{
+				badgetColor = yellowColor;
+			}
 		}
 		else if (key == NTFKEY_HEMATOMA)
 		{

@@ -106,6 +106,7 @@ modded class MissionGameplay
 				m_Hud.InitBadgetWidget(NTFKEY_RADIOPROTECTION, badgets, "Radioprotection");
 				m_Hud.InitBadgetWidget(NTFKEY_DISINFECTED, badgets, "Disinfected");
 				m_Hud.InitBadgetWidget(NTFKEY_ANTIDEPRESANT, badgets, "Antidepresant");
+				m_Hud.InitBadgetWidget(NTFKEY_POISONED, badgets, "Poisoned");
 			}
 		}
 		
@@ -169,6 +170,7 @@ modded class MissionGameplay
 				m_Hud.DisplayBadge(NTFKEY_RADIOPROTECTION, player.GetRadioprotectionLevel());
 				m_Hud.DisplayBadge(NTFKEY_DISINFECTED, player.HasDisinfectedHands());
 				m_Hud.DisplayBadge(NTFKEY_ANTIDEPRESANT, player.GetAntidepresantLevel());
+				m_Hud.DisplayBadge(NTFKEY_POISONED, player.GetPoisonState());
 			}
 						
 			OnUpdateAdvMedicineGUI(player, timeslice);

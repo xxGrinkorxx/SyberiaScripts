@@ -192,12 +192,31 @@ modded class PlayerBase
 	
 	bool HasVisibleSepsis()
 	{
-		return m_sybstats.m_sepsis > 1;
+		return m_sybstats.m_sepsis >= 1;
 	}
 	
 	bool HasVisibleZVirus()
 	{
-		return m_sybstats.m_zombieVirus > 1;
+		return m_sybstats.m_zombieVirus >= 1;
+	}
+
+	int GetPoisonState()  //Returns the level of chemical poisoning from vanilla toxic zone
+	{
+	if (!GetGame().IsDedicatedServer())
+	{
+		if (m_SyncedModifiers & eModifierSyncIDs.MODIFIER_SYNC_CONTAMINATION2) return 2;
+		else if (m_SyncedModifiers & eModifierSyncIDs.MODIFIER_SYNC_CONTAMINATION) return 1;
+	}
+		return 0;
+	}
+
+	bool IsPoisoned()
+	{
+		if ( GetPoisonState() > 0 )
+		{
+		return true;
+		}
+		return false;
 	}
 	
 	float GetMindStateValue()

@@ -1272,7 +1272,28 @@ FrameWidgetClass rootFrame {
        "text halign" center
       }
      }
-    }
+    }    
+      ImageWidgetClass Poisoned {
+       visible 1
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 960 0
+       size 35 35
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconSkull"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+       filter 1
+       nocache 0
+      }
    }
   }
   MultilineTextWidgetClass ScreenInfoWidget {
