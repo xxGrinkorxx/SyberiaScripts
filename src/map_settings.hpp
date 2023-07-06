@@ -3,6 +3,7 @@ class CfgWorlds
 	class DefaultWorld
 	{
         winterWorld=0;
+		defrostininventory=0;
         airDayTemperatureMin=10;
         airDayTemperatureMax=15;
         airNightTemperatureMin=8;
@@ -27,6 +28,7 @@ class CfgWorlds
 	class namalsk: CAWorld
 	{
         winterWorld=1;
+		defrostininventory=0;
         airDayTemperatureMin=-15;
         airDayTemperatureMax=-10;
         airNightTemperatureMin=-20;
